@@ -16,11 +16,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
         <Route path="/" element={<App/>}>
           <Route index element={<Dashboard/>}/>
-        
-        <Route path="/agents" element={<Agents/>}/>
-        <Route path="/maps" element={<Maps/>}/>
-        <Route path="/weapons" element={<Weapons/>}/>
-        <Route path="/sprays" element={<Sprays/>}/>
+          <Route path="/agents" element={<Agents/>}/>
+          <Route path="/maps" element={<Maps/>}/>
+          <Route path="/weapons" element={<Weapons/>}/>
+          <Route path="/sprays" element={<Sprays/>}/>
         </Route>
       </Routes>
 
