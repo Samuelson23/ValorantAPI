@@ -1,0 +1,13 @@
+header{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.logoHome{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+}
