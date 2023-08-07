@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { getService } from '../service/service.config'
+import { arrayAgents, arrayMaps, arraySprays, arrayWeapons } from '../data/dataGlobal'
+import PrintCardAgent from './PrintCardAgent'
 
 const PrintAgents = () => {
-    const [dataService, setDataService] = useState([{}])
+    /* const [dataService, setDataService] = useState([{}])
     const [dataAgents, setDataAgents] = useState([])
-
+    
 
     const getData = async () => {
         setDataService(await getService("agents"))
@@ -35,13 +37,11 @@ const PrintAgents = () => {
         })
     },[dataService])
 
-    console.log("data agents", dataAgents)
+    console.log("data agents", dataAgents) */
 
   return (
     <>
-    <div>PrintAgents</div>
-    <button onClick={()=> console.log("DATA",dataService)}></button>
-    
+    <PrintCardAgent data={arrayAgents.data}></PrintCardAgent>
     </>
   )
 }
