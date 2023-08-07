@@ -1,15 +1,15 @@
-
-import { useEffect, useState } from 'react'
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import { Outlet } from 'react-router-dom';
 import './App.css'
-import { getService } from './service/service.config'
-import PrintAgents from './components/PrintAgents'
 
 function App() {
 
   return (
     <>
-      <button>CONSOLA</button>
-      <PrintAgents/>
+      <Header/>
+      <main><Outlet/></main>
+      <Footer/>
     </>
   )
 }
