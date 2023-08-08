@@ -24,8 +24,7 @@
     align-items: center;
     justify-content: space-evenly;
     gap:10px;
-    background-color: rgb(44, 41, 75);
-    transform: skewX(-2deg)
+    background-color: rgb(82, 77, 139);
 }
 
 .imgAgentFull{
