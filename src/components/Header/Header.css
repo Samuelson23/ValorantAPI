@@ -1,13 +1,30 @@
 header{
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 0 50px;
 }
 
 .logoHome{
-    height: 30px;
+    height: 50px;
+    width: 50px;
+}
+.logoHome img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.divNavHeader{
+    display:flex;
+    padding:15px;
+    gap:50px;
+    
+}
+.logoFavorites{
     width: 30px;
-    background-color: black;
+    height: 30px;
 }
