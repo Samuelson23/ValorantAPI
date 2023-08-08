@@ -1,0 +1,21 @@
+.divAllMaps{
+    padding:20px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+}
+.figureInfoMap{
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.figureInfoMap img{
+    width: 600px;
+    height: 400px;
+}

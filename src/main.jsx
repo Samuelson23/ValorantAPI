@@ -13,6 +13,8 @@ import PrintAgents from './components/PrintAgents.jsx'
 import PrintInfoAgent from './components/PrintInfoAgent/PrintInfoAgent.jsx'
 import PrintWeapons from './components/PrintWeapons.jsx'
 import PrintInfoWeapon from './components/PrintInfoWeapon/PrintInfoWeapon.jsx'
+import PrintMaps from './components/PrintMaps.jsx'
+import PrintCardMaps from './components/PrintCardMaps/PrintCardMaps.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -25,7 +27,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route index element={<PrintAgents/>}/>
             <Route path="/agents/:name" element={<PrintInfoAgent/>}/>
           </Route>
-          <Route path="/maps" element={<Maps/>}/>
+          <Route path="/maps" element={<Maps/>}>
+            <Route index element={<PrintMaps/>}/>
+            <Route path="/maps/:name" element={<PrintCardMaps/>}/>
+          </Route>
           <Route path="/weapons" element={<Weapons/>}>
             <Route index element={<PrintWeapons/>}/>
             <Route path="/weapons/:name" element={<PrintInfoWeapon/>}/>
