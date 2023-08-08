@@ -1,0 +1,60 @@
+.divAllInfoAgent{
+    min-height: 85vh;
+    width: 100vw;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url("https://res.cloudinary.com/dy25vd1yu/image/upload/v1691480149/Valorant/logo_valorant_wallpaper_vanhcw.jpg"); */
+}
+.imgFullAgent{
+    height: 85vh;
+    width: 100vw;
+    object-fit: contain;
+    z-index:0;
+    position:absolute;
+}
+.h2InfoName{
+    font-size: 3rem;
+    padding:2rem;
+}
+.sectionTitleAgent{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:50px;
+}
+.divRolBio{
+    min-height: 100%;
+    width: 25vw;
+    display:flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    gap:35px;
+}
+.sectionAbilities{
+    width: 60vw;
+    min-height:90vh;
+    padding: 20px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+.divAbilities{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    gap:70px;
+}
+.divAbilities div{
+    text-align: center;
+}
+.divAbilities img{
+    width: 80px;
+    height: 80px;
+}

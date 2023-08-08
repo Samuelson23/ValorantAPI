@@ -5,7 +5,7 @@ Cada una de las peticiones las guardamos en un array para quitarnos la asincron√
 sin tener que hacer peticiones a la api de nuevo.
 */
 
-export const arrayAgents = await getService("agents");
+export const arrayAgents = await getService("agents?isPlayableCharacter=true");
 
 export const arrayMaps = await getService("maps");
 

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    min-height: 85vh;
+    background-color: rgb(195, 195, 195);
+}
+
+a{
+    text-decoration: none;
+}
