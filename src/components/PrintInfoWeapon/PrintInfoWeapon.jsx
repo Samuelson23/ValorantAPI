@@ -5,6 +5,7 @@ import "./PrintInfoWeapon.css"
 const PrintInfoWeapon = () => {
   const {name} = useParams()
   const weapon = arrayWeapons.data.filter((elem)=>elem.displayName==name)
+  const skins = weapon[0].skins
   console.log(weapon)
   return (
     <div className="divAllInfoWeapon">
@@ -25,7 +26,7 @@ const PrintInfoWeapon = () => {
           {
             weapon[0].weaponStats.damageRanges.map((range, index)=>{
               return(
-                <div>
+                <div key={weapon[0].uuid}>
                 <h4>RANGE : {range.rangeStartMeters}m - {range.rangeEndMeters}m</h4>
                 <p>HEAD: {range.headDamage}p.</p>
                 <p>BODY: {range.bodyDamage}p.</p>
@@ -37,7 +38,18 @@ const PrintInfoWeapon = () => {
         </section>
       </div>
       <div className="divSkinsWeapon">
-
+          {
+            skins.map((skin)=>{
+              if(skin.displayIcon!=null){
+                return(
+                  <figure key={skin.uuid}>
+                    <h4>{skin.displayName}</h4>
+                    <img src={skin.displayIcon} alt="img skin" />
+                  </figure>
+                )
+              }
+            })
+          }
       </div>
     </div>
   )
