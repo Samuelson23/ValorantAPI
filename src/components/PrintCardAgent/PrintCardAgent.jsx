@@ -4,6 +4,7 @@ import PrintInfoAgent from '../PrintInfoAgent/PrintInfoAgent'
 import { useNavigate} from 'react-router-dom'
 import { useGlobalContext } from '../../context/globalContext'
 import { favAgents } from '../../data/dataFavorites'
+import BtnFav from '../BtnFav/BtnFav'
 
 const PrintCardAgent = ({data}) => {
     const navigate = useNavigate()
@@ -11,24 +12,7 @@ const PrintCardAgent = ({data}) => {
     console.log("favorites", favAgents)
     const [fav, setFav]=useState()
 
-    const addToFavorite = (agent) => {
-        const btn = document.getElementById(`${agent.uuid}`)
-        btn.classList.toggle("btnInFav")
-        console.log(btn)
-        if(!favAgents.includes(agent.uuid)){
-            favAgents.push(agent.uuid)
-            
-        }else{
-            for(let x=0;x<favAgents.length;x++){
-                if(favAgents[x]==agent.uuid){
-                    favAgents.splice(x,1)
-                    btn.removeAttribute("class")
-                    btn.setAttribute("class","btnAddFav")
-                }
-            }
-        }
-        console.log("favsss", favAgents)
-    }
+    
 
     useEffect(()=>{
     
@@ -47,21 +31,9 @@ const PrintCardAgent = ({data}) => {
                             <button className="btnInfoAgent" onClick={()=> navigate(`/agents/${elem.displayName}`)}>More Info</button>
                             {favAgents.includes(elem.uuid)
                             ?
-                            <button className="btnInFav" id={elem.uuid} onClick={()=>addToFavorite(elem)}>
-                            <img 
-                            src="https://res.cloudinary.com/dy25vd1yu/image/upload/v1691485264/star_FILL0_wght400_GRAD0_opsz48_vtyy16.svg" 
-                            alt="logoFavorite" 
-                            
-                            />
-                            </button>
+                            <BtnFav className={"btnInFav"} elem={elem}/>
                             :
-                            <button className="btnAddFav" id={elem.uuid} onClick={()=>addToFavorite(elem)}>
-                                <img 
-                                src="https://res.cloudinary.com/dy25vd1yu/image/upload/v1691485264/star_FILL0_wght400_GRAD0_opsz48_vtyy16.svg" 
-                                alt="logoFavorite" 
-                                
-                                />
-                            </button>}
+                            <BtnFav className={"btnAddFav"} elem={elem}/>}
                         </div>
                         
                     </figure>
