@@ -24,7 +24,17 @@
     align-items: center;
     justify-content: space-evenly;
     gap:10px;
-    background-color: rgb(82, 77, 139);
+    background-color: var(--redColor);
+    color: var(--whiteColor);
+}
+.figureAgent:hover{
+    transform:scale(1.1);
+    background-color: var(--whiteColor);
+    color: var(--redColor);
+    .divButtonCards img{
+        transform: scale(1.4);
+
+    }
 }
 
 .imgAgentFull{
@@ -37,14 +47,35 @@
 
 .divButtonCards{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-bottom: 10px;
+    padding: 0 5px;
 }
-.divButtonCards button{
-    height: 35px;
-    width: 150px;
+.btnInfoAgent{
+    height:  40px;
+    width: 180px;
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
+    border-radius: 10px;
 }
+.btnInfoAgent:hover{
+    background-color: var(--redColor);
+    color: var(--whiteColor);
+}
+.btnAddFav{
+    height:  40px;
+    width: 70px;
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
+    border-radius: 10px;
+}
+.btnInFav{
+    background-color: #ffd90069;
+    border: 3px solid #FFD700;
+}
+
 .divButtonCards img{
     width: 30px;
     height: 30px;
