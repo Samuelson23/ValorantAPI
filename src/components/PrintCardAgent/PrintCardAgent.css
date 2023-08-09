@@ -72,8 +72,11 @@
     border-radius: 10px;
 }
 .btnInFav{
+    height:  40px;
+    width: 70px;
     background-color: #ffd90069;
     border: 3px solid #FFD700;
+    border-radius: 10px;
 }
 
 .divButtonCards img{
