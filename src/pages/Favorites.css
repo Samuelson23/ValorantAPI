@@ -1,0 +1,20 @@
+.divFavAgents{
+    height: 700px;
+    width: 100vw;
+    border: 1px solid red;
+}
+.divFavMaps{
+    height: 500px;
+    width: 100vw;
+    border: 1px solid red;
+}
+.divFavWeapons{
+    height: 500px;
+    width: 100vw;
+    border: 1px solid red;
+}
+.divFavSprays{
+    height: 700px;
+    width: 100vw;
+    border: 1px solid red;
+}
