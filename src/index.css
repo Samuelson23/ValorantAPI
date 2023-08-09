@@ -1,3 +1,13 @@
+:root{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --whiteColor: #ECE8E1;
+    --redColor: #FF4655;
+    --blackColor: #0F1923;
+    --greyColor: #292929;
+    --bkColor: #111111;
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +17,20 @@
 main{
     width: 100vw;
     min-height: 85vh;
-    background-color: rgb(195, 195, 195);
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
 }
 
 a{
     text-decoration: none;
 }
+
+/*
+PALETA
+Negro de fondo header y footer #111111
+Negro de fondo main #0F1923
+Beige de fondo main #ECE8E1
+Negro para letras #0F1923
+Rojo para letras y botones #FF4655
+Gris para algo #292929
+*/
