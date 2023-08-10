@@ -31,9 +31,9 @@ const PrintCardAgent = ({data}) => {
                             <button className="btnInfoAgent" onClick={()=> navigate(`/agents/${elem.displayName}`)}>More Info</button>
                             {favAgents.includes(elem.uuid)
                             ?
-                            <BtnFav className={"btnInFav"} elem={elem}/>
+                            <BtnFav className={"btnInFav"} elem={elem} idArray={"agent"}/>
                             :
-                            <BtnFav className={"btnAddFav"} elem={elem}/>}
+                            <BtnFav className={"btnAddFav"} elem={elem} idArray={"agent"}/>}
                         </div>
                         
                     </figure>
