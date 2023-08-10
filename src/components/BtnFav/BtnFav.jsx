@@ -3,12 +3,14 @@ import { favAgents } from '../../data/dataFavorites'
 
 /*
 Creamos un componente que recibe por prop el nombre de la clase, asi podemos reutilizar el codigo en las diferentes rutas de la pagina
-ya que vamos a utilizar el mismo boton un minimo de 5 veces y así no repetimos codigo.
+ya que vamos a utilizar el mismo boton un minimo de 5 veces y así no repetimos codigo. Ademas recibe el objeto completo (elem) y
+un identificador para saber si es un agente, un mapa, un arma o un spray para asi guardar los datos en diferentes arrays
 */
 
-const BtnFav = ({className, elem}) => {
+const BtnFav = ({className, elem, idArray}) => {
     
     const addToFavorite = (agent) => {
+        console.log(idArray)
         console.log("elem button", agent)
         const btn = document.getElementById(`${agent.uuid}`)
         btn.classList.toggle("btnInFav")
@@ -32,7 +34,7 @@ const BtnFav = ({className, elem}) => {
         <img 
         src="https://res.cloudinary.com/dy25vd1yu/image/upload/v1691485264/star_FILL0_wght400_GRAD0_opsz48_vtyy16.svg" 
         alt="logoFavorite" 
-                            
+        className="imgBtnFav"                    
         />
     </button>
   )
