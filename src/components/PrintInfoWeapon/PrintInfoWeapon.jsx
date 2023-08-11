@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { arrayWeapons } from '../../data/dataGlobal'
 import "./PrintInfoWeapon.css"
+import BtnFav from '../BtnFav/BtnFav'
 const PrintInfoWeapon = () => {
   const {name} = useParams()
+  const [showSkins, setShowSkins] = useState(false)
+  
   const weapon = arrayWeapons.data.filter((elem)=>elem.displayName==name)
   const skins = weapon[0].skins
   console.log(weapon)
   return (
     <div className="divAllInfoWeapon">
       <h2>{weapon[0].displayName}</h2>
-      <img src={weapon[0].displayIcon} alt="img weapon" />
+      <img src={weapon[0].displayIcon} alt="img weapon" className="imgMainWeapon"/>
       <div className="divInfoWeapon">
         <section className="sectionInfoWeapon">
           <h2>STATS</h2>
@@ -37,20 +40,24 @@ const PrintInfoWeapon = () => {
           }
         </section>
       </div>
-      <div className="divSkinsWeapon">
-          {
-            skins.map((skin)=>{
-              if(skin.displayIcon!=null){
-                return(
-                  <figure key={skin.uuid}>
-                    <h4>{skin.displayName}</h4>
-                    <img src={skin.displayIcon} alt="img skin" />
-                  </figure>
-                )
-              }
-            })
-          }
-      </div>
+      <button className="btnSkinsWeapons" onClick={()=>setShowSkins(!showSkins)}><h3>SHOW SKINS</h3></button>
+      {showSkins && (
+        <div className="divSkinsWeapon">
+        {
+          skins.map((skin)=>{
+            if(skin.displayIcon!=null){
+              return(
+                <figure key={skin.uuid}>
+                  <h4>{skin.displayName}</h4>
+                  <img src={skin.displayIcon} alt="img skin" className="imgSkinWeapon" />
+                  <BtnFav className="btnAddFav" elem={skin} idArray={"weapon"}/>
+                </figure>
+              )
+            }
+          })
+        }
+    </div>
+      )}
     </div>
   )
 }
