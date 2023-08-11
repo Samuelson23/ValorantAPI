@@ -8,24 +8,31 @@ const PrintCardMaps = ({data}) => {
   const [backMap, setBackMap] = useState(false)
   const [backImg, setBackImg] = useState("")
 
-  const mapDetails = () => {
-    /* const front = document.querySelector(".imgFrontMap")
-    const back = document.querySelector(".imgBackMap")
-    front.removeAttribute("class")
-    front.setAttribute("class", "imgFrontMapClick")
-    back.removeAttribute("class")
-    back.setAttribute("class", "imgBackMapClick") */
+  const mapDetails = (name) => {
+    /*
+    Con esta funcion vamos a hacer un toggle a las clases de las imagenes para que roten al hacer click. Para ello nos traemos todas las imagenes
+    y las recorremos para que cuando coincida el nombre del mapa nos haga el efecto de rotar y muestre la segunda imagen
+    */
+    const imgFront = document.querySelectorAll(".imgFrontMap")
+    const imgBack = document.querySelectorAll(".imgBackMap")
+
+    imgFront.forEach((elem)=>{
+      elem.alt.includes(name) && elem.classList.toggle("imgFrontMapAfter")
+      
+    })
+    imgBack.forEach((elem)=>{
+      elem.alt.includes(name) && elem.classList.toggle("imgBackMapAfter")
+    })
   }
   console.log(data)
 
   useEffect(()=>{console.log(backMap)},[backMap])
   return (
     <div className="divAllMaps">
-      {/* {(backMap==true) && <PrintBackMaps elem={backImg} setter={setBackMap}/>} */}
       {
         data.map((map)=>{
           return(
-            <figure key={map.uuid} className="figureInfoMap" onClick={()=>mapDetails()} >
+            <figure key={map.uuid} className="figureInfoMap" onClick={()=>mapDetails(map.displayName)} >
               <div className="divNameAndBtn">
                 <h2>{map.displayName}</h2>
                 {favMaps.includes(map.uuid)
@@ -35,8 +42,8 @@ const PrintCardMaps = ({data}) => {
                   <BtnFav className={"btnAddFav"} elem={map} idArray={"map"}/>}
               </div>
               <div className="divImgRotate">
-                <img src={map.splash} alt="img map" className="imgFrontMap"/>
-                <img src={map.displayIcon} alt="img back map" className="imgBackMap" />
+                <img src={map.splash} alt={`alt img ${map.displayName}`} className="imgFrontMap"/>
+                <img src={map.displayIcon} alt={`alt img ${map.displayName}`} className="imgBackMap" />
               </div>
             </figure>
             
