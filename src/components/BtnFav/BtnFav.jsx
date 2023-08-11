@@ -1,5 +1,6 @@
 import React from 'react'
 import { favAgents } from '../../data/dataFavorites'
+import { switchFavs } from '../../utils/switchFavs'
 
 /*
 Creamos un componente que recibe por prop el nombre de la clase, asi podemos reutilizar el codigo en las diferentes rutas de la pagina
@@ -9,26 +10,11 @@ un identificador para saber si es un agente, un mapa, un arma o un spray para as
 
 const BtnFav = ({className, elem, idArray}) => {
     
-    const addToFavorite = (agent) => {
-        console.log(idArray)
-        console.log("elem button", agent)
-        const btn = document.getElementById(`${agent.uuid}`)
-        btn.classList.toggle("btnInFav")
-        console.log(btn)
-        if(!favAgents.includes(agent.uuid)){
-            favAgents.push(agent.uuid)
-            
-        }else{
-            for(let x=0;x<favAgents.length;x++){
-                if(favAgents[x]==agent.uuid){
-                    favAgents.splice(x,1)
-                    btn.removeAttribute("class")
-                    btn.setAttribute("class","btnAddFav")
-                }
-            }
-        }
-        console.log("favsss", favAgents)
+    const addToFavorite = (elem) => {
+        
+        switchFavs(elem, idArray)   //Este switch es el encargado de guardar el elemento que recibe el boton en los diferentes arrays(agentes,mapas,weapons o skins)
     }
+
   return (
     <button className={className} id={elem.uuid} onClick={()=>addToFavorite(elem)}>
         <img 
