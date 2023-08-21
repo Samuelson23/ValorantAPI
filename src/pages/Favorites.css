@@ -1,7 +1,8 @@
 .divFavAgents{
-    height: 700px;
+    height: 500px;
     width: 100vw;
     border: 1px solid red;
+    display:flex;
 }
 .divFavMaps{
     height: 500px;
