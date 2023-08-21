@@ -8,19 +8,23 @@ const PrintFavsAgents = ({data}) => {
     const allAgents = arrayAgents.data
     console.log(data)
   return (
-    <div>
+    <>
         {
         allAgents.map((elem)=>{
             if(data.includes(elem.uuid)){
                 return(
-                    <h2>{elem.displayName}</h2>
+                    <figure key={elem.uuid} className="figureFavAgent">
+                        <img src={elem.fullPortrait} alt={`image of ${elem.displayName}`} />
+                        <h2>{elem.displayName}</h2>
+                        <button onClick={()=> navigate(`/agents/${elem.displayName}`)} className="btnFavsCards">SHOW INFO</button>
+                    </figure>
                     
                     
                 )
             }
         })
         }
-    </div>
+    </>
   )
 }
 
