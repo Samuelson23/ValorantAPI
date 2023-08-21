@@ -1,0 +1,9 @@
+.figureFavSkins{
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border:1px solid red
+}

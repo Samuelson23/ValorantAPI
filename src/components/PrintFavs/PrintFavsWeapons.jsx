@@ -1,4 +1,5 @@
 import React from 'react'
+import "./PrintFavsWeapons.css"
 
 const PrintFavsWeapons = ({data, array}) => {
     const arraySkins = []
@@ -7,24 +8,24 @@ const PrintFavsWeapons = ({data, array}) => {
     //console.log(allWeapons)
     allWeapons.map((elem)=>{
         elem.skins.forEach((skin)=>{
-            arraySkins.push(skin.uuid)
+            if(data.includes(skin.uuid)){
+                arraySkins.push(skin)
+            }
         })
     })
-    //console.log("array", arraySkins)
+    console.log("array", arraySkins)
   return (
     <>
-        {allWeapons.map((elem)=>{
-            elem.skins.forEach((skin)=>{
-                if(data.includes(skin.uuid)){
-                    console.log("skinnnn",skin.displayName)
-                    return(
-                        <figure>
-                            <h2>{skin.displayName}</h2>
-                        </figure>
-                    )
-                }
+        {
+            arraySkins.map((elem)=>{
+                return(
+                    <figure key={elem.uuid} className="figureFavSkins">
+                        <img src={elem.displayIcon} alt={`name of ${elem.displayName}`} className=""/>
+                        <h3>{elem.displayName}</h3>
+                    </figure>
+                )
             })
-        })}
+        }
     </>
   )
 }
