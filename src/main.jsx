@@ -16,6 +16,7 @@ import PrintInfoWeapon from './components/PrintInfoWeapon/PrintInfoWeapon.jsx'
 import PrintMaps from './components/PrintMaps.jsx'
 import PrintCardMaps from './components/PrintCardMaps/PrintCardMaps.jsx'
 import { FavContextProvider } from './context/globalContext.jsx'
+import PrintSprays from './components/PrintSprays.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -36,7 +37,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <Route index element={<PrintWeapons/>}/>
               <Route path="/weapons/:name" element={<PrintInfoWeapon/>}/>
             </Route>
-            <Route path="/sprays" element={<Sprays/>}/>
+            <Route path="/sprays" element={<Sprays/>}>
+              <Route index element={<PrintSprays/>}/>
+            </Route>
             <Route path="/favorites" element={<Favorites/>}/>
           </Route>
         </Routes>
