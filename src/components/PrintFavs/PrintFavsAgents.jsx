@@ -3,9 +3,9 @@ import { arrayAgents } from '../../data/dataGlobal'
 import "./PrintFavsAgents.css"
 import { useNavigate } from 'react-router-dom'
 
-const PrintFavsAgents = ({data}) => {
+const PrintFavsAgents = ({data, array}) => {
     const navigate = useNavigate()
-    const allAgents = arrayAgents.data
+    const allAgents = array.data
     console.log(data)
   return (
     <>
