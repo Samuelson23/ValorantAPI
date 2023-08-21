@@ -10,9 +10,13 @@
     border: 1px solid red;
 }
 .divFavWeapons{
-    height: 500px;
+    height: 350px;
     width: 100vw;
     border: 1px solid red;
+    display:flex;
+    align-items: center;
+    overflow-x: scroll;
+    gap:80px;
 }
 .divFavSprays{
     height: 700px;
