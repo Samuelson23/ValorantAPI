@@ -8,11 +8,14 @@
 .divPrintSprays{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .figureSpray{
     width: 300px;
     height: 300px;
-    border:2px solid red;
+    border:1px solid red;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -21,4 +24,20 @@
 .imgSpray{
     width: 200px;
     height: 200px;
+}
+
+@media screen and (width<630px){
+    .figureSpray{
+        width:175px;
+        height: 350px;
+        border:none;
+        border-bottom: 1px solid var(--redColor);
+    }
+    .figureSpray h4{
+        height: 60px;
+    }
+    .imgSpray{
+        width: 100px;
+        height: 100px;
+    }
 }
