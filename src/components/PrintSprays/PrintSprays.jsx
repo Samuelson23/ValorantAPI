@@ -12,7 +12,7 @@ const PrintSprays = ({data}) => {
             if(elem!=undefined){
                 return(
                     <figure key={elem.uuid} className="figureSpray">
-                        <h2>{elem.displayName}</h2>
+                        <h4>{elem.displayName}</h4>
                         <img src={elem.fullIcon} alt={elem.displayName} className="imgSpray"/>
                         {favSprays.includes(elem.uuid)
                             ?
