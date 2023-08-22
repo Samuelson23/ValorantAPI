@@ -7,28 +7,42 @@ import PrintFavsMaps from '../components/PrintFavs/PrintFavsMaps'
 import PrintFavsWeapons from '../components/PrintFavs/PrintFavsWeapons'
 import PrintFavsSprays from '../components/PrintFavs/PrintFavsSprays'
 
-
+/*
+El componente encargado de pintar los favs recibe por props -> data: array de favoritos | array: res de la API con toda la data
+*/
 const Favorites = () => {
   console.log("favoritessss", favAgents)
 
   return (
     <>
-    <h2>AGENTS:</h2>
-    <div className="divFavAgents">
-      <PrintFavsAgents data={favAgents} array={arrayAgents}/>
-    </div>
-    <h2>MAPS:</h2>
-    <div className="divFavMaps">
-      <PrintFavsMaps data={favMaps}/>
-    </div>
-    <h2>WEAPONS:</h2>
-    <div className="divFavWeapons">
-      <PrintFavsWeapons data={favWeapons} array={arrayWeapons}/>
-    </div>
-    <h2>SPRAYS:</h2>
-    <div className="divFavSprays">
-      <PrintFavsSprays data={favSprays}/>
-    </div>
+    <section className="sectionFavs">
+      <h2 className="h2Fav">AGENTS:</h2>
+      <div className="divFavAgents">
+        <PrintFavsAgents data={favAgents} array={arrayAgents}/>
+      </div>
+    </section>
+    
+    <section className="sectionFavs">
+      <h2 className="h2Fav">MAPS:</h2>
+      <div className="divFavMaps">
+        <PrintFavsMaps data={favMaps} array={arrayMaps}/>
+      </div>
+    </section>
+    
+    <section className="sectionFavs">
+      <h2 className="h2Fav">WEAPONS:</h2>
+      <div className="divFavWeapons">
+        <PrintFavsWeapons data={favWeapons} array={arrayWeapons}/>
+      </div>
+    </section>
+
+    <section className="sectionFavs">
+      <h2 className="h2Fav">SPRAYS:</h2>
+      <div className="divFavSprays">
+        <PrintFavsSprays data={favSprays} array={arraySprays}/>
+      </div>
+    </section>
+    
     </>
   )
 }

@@ -1,25 +1,101 @@
-.divFavAgents{
-    height: 500px;
-    width: 100vw;
-    border: 1px solid red;
+.sectionFavs{
+    height: auto;
+
+    padding: 35px 15px;
     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.h2Fav{
+    font-size: 3rem;
+    color: var(--redColor);
+    text-shadow: 0 0 5px var(--greyColor), 0 0 5px var(--whiteColor);
+}
+.divFavAgents{
+    height: 530px;
+    width: 90vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display:flex;
+    gap:8rem;
 }
 .divFavMaps{
-    height: 500px;
-    width: 100vw;
-    border: 1px solid red;
-}
-.divFavWeapons{
-    height: 350px;
-    width: 100vw;
-    border: 1px solid red;
+    height: 400px;
+    width: 90vw;
     display:flex;
+    justify-content: center;
     align-items: center;
     overflow-x: scroll;
+    overflow-y: hidden;
+    gap:20px;
+
+}
+.divFavWeapons{
+    height: 370px;
+    width: 90vw;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x:scroll;
+    overflow-y: hidden;
     gap:80px;
 }
 .divFavSprays{
-    height: 700px;
-    width: 100vw;
-    border: 1px solid red;
+    height: 400px;
+    width: 90vw;
+    display:flex;
+    align-items: center;
+    overflow-x: scroll;
+    gap:50px;
 }
+
+
+.divFavAgents::-webkit-scrollbar {
+    height: 10px;
+}
+.divFavAgents::-webkit-scrollbar-thumb{
+    width: 100px;
+    background-color: var(--whiteColor);
+    border-radius: 20px;
+    border:3px solid var(--whiteColor)
+}
+.divFavMaps::-webkit-scrollbar {
+    height: 10px;
+}
+.divFavMaps::-webkit-scrollbar-thumb{
+    width: 100px;
+    background-color: var(--whiteColor);
+    border-radius: 20px;
+    border:3px solid var(--whiteColor)
+}
+.divFavWeapons::-webkit-scrollbar {
+    height: 10px;
+}
+.divFavWeapons::-webkit-scrollbar-thumb{
+    width: 100px;
+    background-color: var(--whiteColor);
+    border-radius: 20px;
+    border:3px solid var(--whiteColor)
+}
+.divFavSprays::-webkit-scrollbar {
+    height: 10px;
+}
+.divFavSprays::-webkit-scrollbar-thumb{
+    width: 100px;
+    background-color: var(--whiteColor);
+    border-radius: 20px;
+    border:3px solid var(--whiteColor)
+}
+/* .divFavMaps::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.divFavWeapons::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.divFavSprays::-webkit-scrollbar {
+    -webkit-appearance: none;
+} */
