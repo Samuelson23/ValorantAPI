@@ -49,7 +49,10 @@ export const switchFavs = (elem, id) => {
       return favWeapons;
 
     case "spray":
-      break;
+      checkInArray(elem,favSprays)
+      console.log("fav sprays switch", favSprays)
+      return favSprays;
+      
   }
   return favAgents, favMaps, favSprays, favWeapons;
 };
