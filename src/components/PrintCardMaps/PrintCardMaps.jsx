@@ -32,7 +32,7 @@ const PrintCardMaps = ({data}) => {
       {
         data.map((map)=>{
           return(
-            <figure key={map.uuid} className="figureInfoMap" onClick={()=>mapDetails(map.displayName)} >
+            <figure key={map.uuid} className="figureInfoMap" >
               <div className="divNameAndBtn">
                 <h2>{map.displayName}</h2>
                 {favMaps.includes(map.uuid)
@@ -41,7 +41,7 @@ const PrintCardMaps = ({data}) => {
                   :
                   <BtnFav className={"btnAddFav"} elem={map} idArray={"map"}/>}
               </div>
-              <div className="divImgRotate">
+              <div className="divImgRotate" onClick={()=>mapDetails(map.displayName)} >
                 <img src={map.splash} alt={`alt img ${map.displayName}`} className="imgFrontMap"/>
                 <img src={map.displayIcon} alt={`alt img ${map.displayName}`} className="imgBackMap" />
               </div>
