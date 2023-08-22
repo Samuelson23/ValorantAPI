@@ -1,9 +1,10 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { arrayAgents } from '../../data/dataGlobal'
 import "./PrintInfoAgent.css"
 
 const PrintInfoAgent = (dataAgent) => {
+    const navigate=useNavigate()
 /*
 Mediante useParams recogemos el name del parametro de la ruta. Desde el array de todos los agentes flitramos ese nombre para traernos el objecto
 del agente que necesitamos pintar en esta pagina
@@ -15,6 +16,15 @@ del agente que necesitamos pintar en esta pagina
     console.log(thisAgent)
 
   return (
+    <>
+    <div className="divBackArrow">
+        <img 
+        src="https://res.cloudinary.com/dy25vd1yu/image/upload/v1692727727/pngwing.com_3_as5jo8.png" 
+        alt="image back arro" 
+        className="imgBackArrow" 
+        onClick={()=> navigate("/agents")}
+        />
+    </div>
     <div className="divAllInfoAgent">
         <img 
         src={thisAgent[0].fullPortrait} 
@@ -49,7 +59,9 @@ del agente que necesitamos pintar en esta pagina
                 })
             }
         </section>
+        
     </div>
+    </>
   )
 }
 

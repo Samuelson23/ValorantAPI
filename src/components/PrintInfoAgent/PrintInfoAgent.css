@@ -1,3 +1,13 @@
+.divBackArrow{
+    width: 100vw;
+    height: 35px;
+    padding:5px 0 0 10px
+}
+.imgBackArrow{
+    height: 35px;
+    width: 50px;
+}
+
 .divAllInfoAgent{
     min-height: 85vh;
     width: 100vw;
