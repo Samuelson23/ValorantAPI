@@ -34,9 +34,9 @@ const PrintCardSprays = ({data}) => {
   return (
     <div className="divAllSprays">
         <div className="divButtonsSprays">
-        <button onClick={()=> num<data.length && setNum(num+50)}>NUM+</button>
+        <button onClick={()=> num>50 && setNum(num-50)} className="btnPagination">NUM-</button>
         <h4>{num-49} - {num}</h4>
-        <button onClick={()=> num>50 && setNum(num-50)}>NUM-</button>
+        <button onClick={()=> num<data.length && setNum(num+50)} className="btnPagination">NUM+</button>
         </div>
         <div className="divPrintSprays">
             {/* {
@@ -54,6 +54,11 @@ const PrintCardSprays = ({data}) => {
                 })
             } */}
             <PrintSprays data={totalSprays}/>
+        </div>
+        <div className="divButtonsSprays">
+        <button onClick={()=> num>50 && setNum(num-50)} className="btnPagination">NUM-</button>
+        <h4>{num-49} - {num}</h4>
+        <button onClick={()=> num<data.length && setNum(num+50)} className="btnPagination">NUM+</button>
         </div>
     </div>
   )
