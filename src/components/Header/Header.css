@@ -14,12 +14,14 @@ header{
     width: 50px;
 }
 .logoHome img{
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 .divNavHeader{
     display:flex;
+    justify-content: center;
+    width: 60vw;
     padding:15px;
     gap:50px;
     
@@ -27,4 +29,23 @@ header{
 .logoFavorites{
     width: 30px;
     height: 30px;
+}
+
+@media screen and (width<800px){
+    .divNavHeader{
+        width: 40vw;
+        gap:10px;
+        padding:10px;
+    }
+    header{
+        justify-content: space-around;
+        gap:40px;
+    }
+
+}
+
+@media screen and (width<500px){
+    .divNavHeader{
+        font-size: 12px;
+    }
 }
