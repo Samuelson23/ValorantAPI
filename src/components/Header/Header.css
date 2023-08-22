@@ -7,6 +7,10 @@ header{
     justify-content: space-between;
     gap: 80px;
     padding: 0 50px;
+    position:fixed;
+    z-index:10;
+    background-color: var(--whiteColor);
+
 }
 
 .logoHome{
