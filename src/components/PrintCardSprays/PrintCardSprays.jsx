@@ -34,9 +34,17 @@ const PrintCardSprays = ({data}) => {
   return (
     <div className="divAllSprays">
         <div className="divButtonsSprays">
-        <button onClick={()=> num>50 && setNum(num-50)} className="btnPagination">NUM-</button>
-        <h4>{num-49} - {num}</h4>
-        <button onClick={()=> num<data.length && setNum(num+50)} className="btnPagination">NUM+</button>
+            {num==50 
+            ? <button onClick={()=> num>50 && setNum(num-50)} disabled={true} className="btnPaginationOff">BACK</button>
+            : <button onClick={()=> num>50 && setNum(num-50)} className="btnPagination">BACK</button>
+            }
+        
+            <h4>{num-49} - {num}</h4>
+
+            {num==500
+            ? <button onClick={()=> num<data.length && setNum(num+50)} disabled={true} className="btnPaginationOff">NEXT</button> 
+            : <button onClick={()=> num<data.length && setNum(num+50)} className="btnPagination">NEXT</button>            
+            }
         </div>
         <div className="divPrintSprays">
             {/* {
@@ -56,9 +64,17 @@ const PrintCardSprays = ({data}) => {
             <PrintSprays data={totalSprays}/>
         </div>
         <div className="divButtonsSprays">
-        <button onClick={()=> num>50 && setNum(num-50)} className="btnPagination">NUM-</button>
-        <h4>{num-49} - {num}</h4>
-        <button onClick={()=> num<data.length && setNum(num+50)} className="btnPagination">NUM+</button>
+            {num==50 
+            ? <button onClick={()=> num>50 && setNum(num-50)} disabled={true} className="btnPaginationOff">BACK</button>
+            : <button onClick={()=> num>50 && setNum(num-50)} className="btnPagination">BACK</button>
+            }
+        
+            <h4>{num-49} - {num}</h4>
+
+            {num==500
+            ? <button onClick={()=> num<data.length && setNum(num+50)} disabled={true} className="btnPaginationOff">NEXT</button> 
+            : <button onClick={()=> num<data.length && setNum(num+50)} className="btnPagination">NEXT</button>            
+            }
         </div>
     </div>
   )

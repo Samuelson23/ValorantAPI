@@ -13,6 +13,14 @@
     border:2px solid var(--greyColor);
     border-radius: 10px;
 }
+.btnPaginationOff{
+    height: 40px;
+    width: 80px;
+    color:var(--whiteColor);
+    background-color: var(--greyColor);
+    border:2px solid var(--greyColor);
+    border-radius: 10px;
+}
 .divAllSprays{
     height: 100%;
     width: 100%;
@@ -46,6 +54,7 @@
         width:175px;
         height: 350px;
         border:none;
+        border-top:1px solid var(--redColor);
         border-bottom: 1px solid var(--redColor);
     }
     .figureSpray h4{
