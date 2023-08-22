@@ -44,6 +44,9 @@
     align-items: center;
     gap:30px;
 }
+.sectionAbilities h3{
+    width: 100%;
+}
 .divAbilities{
     width: 100%;
     min-height: 20vh;
@@ -57,4 +60,38 @@
 .divAbilities img{
     width: 80px;
     height: 80px;
+}
+
+@media screen and (width<450px){
+    .imgFullAgent{
+        height: 50vh;
+        width: 100vw;
+        object-fit: contain;
+        z-index:0;
+        position:initial;
+    }
+    .sectionTitleAgent{
+        flex-direction: column;
+    }
+    .divRolBio{
+        width: 100%;
+    }
+    .sectionTitleAgent{
+        height: 65vh;
+        padding:30px;
+    }
+    .sectionAbilities{
+        width: 100%;
+        height: auto;
+        gap:35px;
+        padding-top:80px;
+    }
+    .sectionAbilities h3{
+        width: 100%;
+    }
+    .h2InfoName{
+        width: 100%;
+        padding:0;
+        text-align: center;
+    }
 }

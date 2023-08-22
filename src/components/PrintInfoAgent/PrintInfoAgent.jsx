@@ -32,6 +32,7 @@ del agente que necesitamos pintar en esta pagina
             </div>
         </section>
         <section className="sectionAbilities">
+        <h3># ABILITIES</h3>
             {
                 thisAgent[0].abilities.map((ab)=>{
                     return(
