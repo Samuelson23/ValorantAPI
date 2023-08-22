@@ -1,0 +1,12 @@
+.figureFavSpray{
+    width: 300px;
+    height: 270px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgFavSpray{
+    width: 200px;
+    height: 200px;
+}

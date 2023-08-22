@@ -4,6 +4,10 @@
     gap:50px;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    border:1px solid red
+    height: 350px;
+}
+.imgFavWeapon{
+    width: 350px;
+    height: 200px;
+    object-fit: contain;
 }

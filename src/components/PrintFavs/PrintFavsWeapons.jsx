@@ -4,8 +4,7 @@ import "./PrintFavsWeapons.css"
 const PrintFavsWeapons = ({data, array}) => {
     const arraySkins = []
     const allWeapons = array.data
-    console.log("data",data)
-    //console.log(allWeapons)
+
     allWeapons.map((elem)=>{
         elem.skins.forEach((skin)=>{
             if(data.includes(skin.uuid)){
@@ -13,14 +12,14 @@ const PrintFavsWeapons = ({data, array}) => {
             }
         })
     })
-    console.log("array", arraySkins)
+
   return (
     <>
         {
             arraySkins.map((elem)=>{
                 return(
                     <figure key={elem.uuid} className="figureFavSkins">
-                        <img src={elem.displayIcon} alt={`name of ${elem.displayName}`} className=""/>
+                        <img src={elem.displayIcon} alt={`name of ${elem.displayName}`} className="imgFavWeapon"/>
                         <h3>{elem.displayName}</h3>
                     </figure>
                 )
