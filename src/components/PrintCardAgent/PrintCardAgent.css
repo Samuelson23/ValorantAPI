@@ -7,6 +7,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap:10px;
+    margin:0
 }
 .divCardsAgents section{
     height: 350px;
@@ -14,7 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid red;
 }
 .figureAgent{
     height: 90%;
@@ -63,6 +63,7 @@
 .btnInfoAgent:hover{
     background-color: var(--redColor);
     color: var(--whiteColor);
+    border:1px solid var(--redColor);
 }
 .btnAddFav{
     height:  40px;
@@ -83,4 +84,29 @@
     width: 30px;
     height: 30px;
     border-color: brown;
+}
+
+@media screen and (width<400px){
+    .divCardsAgents{
+        flex-wrap: wrap;
+    }
+    .divCardsAgents section{
+        width:170px;
+    }
+    .imgAgentFull{
+        width: 145px;
+        height: 175px;
+    }
+    .divButtonCards{
+        gap:5px;
+    }
+    .btnInfoAgent{
+        width: 100px;
+    }
+    .btnAddFav{
+        width: 50px;
+    }
+    .btnInFav{
+        width: 50px;
+    }
 }
