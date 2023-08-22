@@ -5,13 +5,17 @@
     align-items: center;
     gap:20px;
 }
+.divCardsWeapons h3{
+    display:none;
+}
 .divCardsWeapons > div{
     width: 30vw;
     display:flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap:20px;
-    border:1px solid black;
+    border:1px solid var(--redColor);
     padding:10px;
 }
 .divCardsWeapons > div > section{
@@ -23,10 +27,7 @@
     justify-content: center;
     
 }
-.divCardsWeapons > div > section > button{
-    width: 100px;
-    height: 30px;
-}
+
 .figureCardWeapon{
     width: 100%;
     height: 100%;
@@ -43,4 +44,44 @@
     width: 200px;
     height: 100px;
     object-fit: contain;
+}
+.btnInformation{
+    height: 50px;
+    width: 150px;
+    color:var(--whiteColor);
+    background-color: var(--redColor);
+    border:2px solid var(--greyColor);
+    border-radius: 10px;
+}
+.btnInformation:hover{
+    -webkit-box-shadow: 0px 0px 10px 5px var(--whiteColor);
+-moz-box-shadow: 0px 0px 10px 5px var(--whiteColor);
+box-shadow: 0px 0px 10px 5px var(--whiteColor);
+}
+
+
+@media screen and (width<850px){
+    .divCardsWeapons h3{
+        font-size: 30px;
+        text-align: center;
+        padding-top:15px;
+        display:block;
+        color: var(--redColor)
+    }
+    .divCardsWeapons{
+        flex-direction: column;
+        width: 100vw;
+    }
+    .divCardsWeapons img{
+        width: 150px;
+    }
+    .divCardsWeapons > div {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .divCardsWeapons > div > section{
+        width: 150px
+        
+    }
 }

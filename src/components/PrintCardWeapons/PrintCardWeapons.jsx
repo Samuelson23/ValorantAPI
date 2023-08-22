@@ -18,6 +18,7 @@ Filtramos las armas por categorias para imprimirlas en diferentes divs y asi ten
     console.log(data)
   return (
     <div className="divCardsWeapons">
+        <h3>PISTOLS</h3>
         <div className="divPistols">
         {
             pistols.map((elem)=>{
@@ -29,7 +30,7 @@ Filtramos las armas por categorias para imprimirlas en diferentes divs y asi ten
                             src={elem.displayIcon} alt="weapon imagen" />
                             
                         </figure>
-                        <button onClick={()=> navigate(`/weapons/${elem.displayName}`)}>MORE INFO</button>
+                        <button onClick={()=> navigate(`/weapons/${elem.displayName}`)} className="btnInformation">MORE INFO</button>
                     </section>
                 )
             })
@@ -43,13 +44,13 @@ Filtramos las armas por categorias para imprimirlas en diferentes divs y asi ten
                             <img src={elem.displayIcon} alt="weapon imagen" />
                             
                         </figure>
-                        <button onClick={()=> navigate(`/weapons/${elem.displayName}`)}>MORE INFO</button>
+                        <button onClick={()=> navigate(`/weapons/${elem.displayName}`)} className="btnInformation">MORE INFO</button>
                     </section>
                 )
             })
         }
         </div>
-
+        <h3>SMG, SHOTGUN AND HEAVY WEAPON</h3>
         <div className="divSmgsShotHeavy">
         {
             smgs.map((elem)=>{
@@ -60,7 +61,7 @@ Filtramos las armas por categorias para imprimirlas en diferentes divs y asi ten
                             <img src={elem.displayIcon} alt="weapon imagen" />
                             
                         </figure>
-                        <button onClick={()=> navigate(`/weapons/${elem.displayName}`)}>MORE INFO</button>
+                        <button onClick={()=> navigate(`/weapons/${elem.displayName}`)} className="btnInformation">MORE INFO</button>
                     </section>
                 )
             })
@@ -74,7 +75,7 @@ Filtramos las armas por categorias para imprimirlas en diferentes divs y asi ten
                             <img src={elem.displayIcon} alt="weapon imagen" />
                             
                         </figure>
-                        <button onClick={()=> navigate(`/weapons/${elem.displayName}`)}>MORE INFO</button>
+                        <button onClick={()=> navigate(`/weapons/${elem.displayName}`)} className="btnInformation">MORE INFO</button>
                     </section>
                 )
             })
@@ -88,13 +89,13 @@ Filtramos las armas por categorias para imprimirlas en diferentes divs y asi ten
                             <img src={elem.displayIcon} alt="weapon imagen" />
                             
                         </figure>
-                        <button onClick={()=> navigate(`/weapons/${elem.displayName}`)}>MORE INFO</button>
+                        <button onClick={()=> navigate(`/weapons/${elem.displayName}`)} className="btnInformation">MORE INFO</button>
                     </section>
                 )
             })
         }
         </div>
-        
+        <h3>RIFLES</h3>
         <div className="divRifles">
         {
             riffles.map((elem)=>{
@@ -105,7 +106,7 @@ Filtramos las armas por categorias para imprimirlas en diferentes divs y asi ten
                             <img src={elem.displayIcon} alt="weapon imagen" />
                             
                         </figure>
-                        <button onClick={()=> navigate(`/weapons/${elem.displayName}`)}>MORE INFO</button>
+                        <button onClick={()=> navigate(`/weapons/${elem.displayName}`)} className="btnInformation">MORE INFO</button>
                     </section>
                 )
             })
