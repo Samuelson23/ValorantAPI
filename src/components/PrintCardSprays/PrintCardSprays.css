@@ -7,7 +7,7 @@
 }
 .btnPagination{
     height: 40px;
-    width: 80px;
+    width: 120px;
     color:var(--whiteColor);
     background-color: var(--redColor);
     border:2px solid var(--greyColor);
@@ -15,7 +15,7 @@
 }
 .btnPaginationOff{
     height: 40px;
-    width: 80px;
+    width: 120px;
     color:var(--whiteColor);
     background-color: var(--greyColor);
     border:2px solid var(--greyColor);
@@ -63,5 +63,13 @@
     .imgSpray{
         width: 100px;
         height: 100px;
+    }
+    .btnPagination{
+        height: 40px;
+        width: 80px;
+    }
+    .btnPaginationOff{
+        height: 40px;
+        width: 80px;
     }
 }
