@@ -1,16 +1,27 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { arrayWeapons } from '../../data/dataGlobal'
 import "./PrintInfoWeapon.css"
 import BtnFav from '../BtnFav/BtnFav'
+
+
 const PrintInfoWeapon = () => {
   const {name} = useParams()
   const [showSkins, setShowSkins] = useState(false)
-  
+  const navigate = useNavigate()
   const weapon = arrayWeapons.data.filter((elem)=>elem.displayName==name)
   const skins = weapon[0].skins
   console.log(weapon)
   return (
+    <>
+    <div className="divBackArrow">
+        <img 
+        src="https://res.cloudinary.com/dy25vd1yu/image/upload/v1692727727/pngwing.com_3_as5jo8.png" 
+        alt="image back arro" 
+        className="imgBackArrow" 
+        onClick={()=> navigate("/weapons")}
+        />
+    </div>
     <div className="divAllInfoWeapon">
       <h2>{weapon[0].displayName}</h2>
       <img src={weapon[0].displayIcon} alt="img weapon" className="imgMainWeapon"/>
@@ -59,6 +70,7 @@ const PrintInfoWeapon = () => {
     </div>
       )}
     </div>
+    </>
   )
 }
 

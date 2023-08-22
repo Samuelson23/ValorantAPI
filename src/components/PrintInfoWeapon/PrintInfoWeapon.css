@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     padding:10px;
+    gap:40px;
 }
 .imgMainWeapon{
     height: 500px;
