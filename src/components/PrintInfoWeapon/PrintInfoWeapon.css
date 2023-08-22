@@ -70,3 +70,24 @@
     height: 200px;
     object-fit: contain;
 }
+
+@media screen and (width<850px){
+    .imgMainWeapon{
+        height: 500px;
+        width: 450px;
+
+    }
+}
+
+@media screen and (width<550px){
+    .divInfoWeapon{
+        flex-direction: column;
+        gap:50px;
+        text-align: center;
+    }
+    .imgMainWeapon{
+        height: 500px;
+        width: 380px;
+
+    }
+}
