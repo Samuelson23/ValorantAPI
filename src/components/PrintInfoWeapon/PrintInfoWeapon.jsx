@@ -11,7 +11,7 @@ const PrintInfoWeapon = () => {
   const navigate = useNavigate()
   const weapon = arrayWeapons.data.filter((elem)=>elem.displayName==name)
   const skins = weapon[0].skins
-  console.log(weapon)
+
   return (
     <>
     <div className="divBackArrow">

@@ -26,10 +26,6 @@ const PrintCardSprays = ({data}) => {
     useEffect(()=>{
         setNum(50)
     },[])
-    useEffect(()=>{
-        console.log("number", num)
-        //printButton(data,num)
-    },[num])
 
   return (
     <div className="divAllSprays">

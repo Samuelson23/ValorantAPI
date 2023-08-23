@@ -11,7 +11,6 @@ import PrintFavsSprays from '../components/PrintFavs/PrintFavsSprays'
 El componente encargado de pintar los favs recibe por props -> data: array de favoritos | array: res de la API con toda la data
 */
 const Favorites = () => {
-  console.log("favoritessss", favAgents)
 
   return (
     <>

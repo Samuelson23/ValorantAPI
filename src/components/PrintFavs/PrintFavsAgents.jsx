@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 const PrintFavsAgents = ({data, array}) => {
     const navigate = useNavigate()
     const allAgents = array.data
-    console.log(data)
+
   return (
     <>
         {

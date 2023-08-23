@@ -2,7 +2,6 @@ import React from 'react'
 import "./PrintFavsSprays.css"
 const PrintFavsSprays = ({data, array}) => {
   const allSprays = array.data
-  console.log(array)
 
   return (
     <>
