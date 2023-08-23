@@ -4,11 +4,16 @@ import React from 'react'
 const SectionCustom = styled.section`
     width:80vw;
     min-height: 60vh;
-    border:1px solid red;
+    border:9px ridge var(--redColor);
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding:15px 0;
+    &.animatedSectionOff{
+    opacity: 0;
+    transition: all 1s;
+}
 `
 
 const Section = ({children, className}) => {

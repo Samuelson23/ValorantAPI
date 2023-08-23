@@ -7,7 +7,7 @@ const DivCustom = styled.div`
     align-items: center;
     justify-content: center;
     gap:80px;
-    padding:20px 0;
+    padding:80px 0;
     width:100vw;
     min-height: 95vh;
 `

@@ -16,7 +16,7 @@ const Pcustom = styled.p`
     padding:${({padding})=> padding ? padding : 0};
 
     @media screen and (width<700px){
-        width:90vw;
+        width:73vw;
         font-size: ${({fontSize})=>
         fontSize==="big"
         ? "1.5rem"
