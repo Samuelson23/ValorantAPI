@@ -17,6 +17,7 @@ const Favorites = () => {
     <>
     <section className="sectionFavs">
       <h2 className="h2Fav">AGENTS:</h2>
+      <h4>{favAgents.length} elements</h4>
       <div className="divFavAgents">
         <PrintFavsAgents data={favAgents} array={arrayAgents}/>
       </div>
@@ -24,6 +25,7 @@ const Favorites = () => {
     
     <section className="sectionFavs">
       <h2 className="h2Fav">MAPS:</h2>
+      <h4>{favMaps.length} elements</h4>
       <div className="divFavMaps">
         <PrintFavsMaps data={favMaps} array={arrayMaps}/>
       </div>
@@ -31,6 +33,7 @@ const Favorites = () => {
     
     <section className="sectionFavs">
       <h2 className="h2Fav">WEAPONS:</h2>
+      <h4>{favWeapons.length} elements</h4>
       <div className="divFavWeapons">
         <PrintFavsWeapons data={favWeapons} array={arrayWeapons}/>
       </div>
@@ -38,6 +41,7 @@ const Favorites = () => {
 
     <section className="sectionFavs">
       <h2 className="h2Fav">SPRAYS:</h2>
+      <h4>{favSprays.length} elements</h4>
       <div className="divFavSprays">
         <PrintFavsSprays data={favSprays} array={arraySprays}/>
       </div>

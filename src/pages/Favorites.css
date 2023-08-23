@@ -26,7 +26,7 @@
     height: 400px;
     width: 90vw;
     display:flex;
-    justify-content: center;
+
     align-items: center;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -39,7 +39,7 @@
 
     display:flex;
     align-items: center;
-    justify-content: center;
+
     overflow-x:scroll;
     overflow-y: hidden;
     gap:80px;
