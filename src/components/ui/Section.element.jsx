@@ -11,9 +11,9 @@ const SectionCustom = styled.section`
     align-items: center;
 `
 
-const Section = ({children}) => {
+const Section = ({children, className}) => {
   return (
-    <SectionCustom>
+    <SectionCustom className={className}>
         {children}
     </SectionCustom>
   )

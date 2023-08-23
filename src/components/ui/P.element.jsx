@@ -15,6 +15,16 @@ const Pcustom = styled.p`
     text-align: center;
     padding:${({padding})=> padding ? padding : 0};
 
+    @media screen and (width<700px){
+        width:90vw;
+        font-size: ${({fontSize})=>
+        fontSize==="big"
+        ? "1.5rem"
+        : fontSize==="medium"
+        ? "12px"
+        : fontSize==="small" && "12px"
+    };
+    }
 `
 
 
