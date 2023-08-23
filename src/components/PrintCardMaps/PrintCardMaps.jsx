@@ -24,9 +24,7 @@ const PrintCardMaps = ({data}) => {
       elem.alt.includes(name) && elem.classList.toggle("imgBackMapAfter")
     })
   }
-  console.log(data)
 
-  useEffect(()=>{console.log(backMap)},[backMap])
   return (
     <div className="divAllMaps">
       {

@@ -8,8 +8,6 @@ import BtnFav from '../BtnFav/BtnFav'
 
 const PrintCardAgent = ({data}) => {
     const navigate = useNavigate()
-    console.log("DATA-AGENTS", data)
-    console.log("favorites", favAgents)
     const [fav, setFav]=useState()
 
     

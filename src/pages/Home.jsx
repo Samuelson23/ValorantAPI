@@ -15,11 +15,8 @@ const Home = () => {
         const sections = document.querySelectorAll(".animatedSectionOff")
         const scrollTop = document.documentElement.scrollTop
 
-        console.log("altura scroll",scrollTop)
-
         sections.forEach((elem,index)=>{
             let altura = sections[index].offsetTop
-            console.log("altura section",altura)
             if(altura-600<scrollTop){
                 sections[index].style.opacity=1
 

@@ -15,7 +15,7 @@ Filtramos las armas por categorias para imprimirlas en diferentes divs y asi ten
     const melee = weapons.filter((elem)=>elem.shopData==null)
     const navigate = useNavigate()
 
-    console.log(data)
+
   return (
     <div className="divCardsWeapons">
         <h3>PISTOLS</h3>

@@ -13,8 +13,6 @@ del agente que necesitamos pintar en esta pagina
     const allAgents = arrayAgents.data
     const thisAgent = allAgents.filter((agent)=> name!="KAY-O" ? agent.displayName == name : agent.displayName == "KAY/O")
 
-    console.log(thisAgent)
-
   return (
     <>
     <div className="divBackArrow">

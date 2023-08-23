@@ -3,8 +3,7 @@ import BtnFav from '../BtnFav/BtnFav'
 import { favSprays } from '../../data/dataFavorites'
 
 const PrintSprays = ({data}) => {
-    console.log("pintar", data)
-    console.log(favSprays)
+
   return (
     <>
     {

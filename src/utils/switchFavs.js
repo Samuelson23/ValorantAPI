@@ -30,29 +30,22 @@ const checkInArray = (element, array) => {
 Esta funcion se encarga de gestionar en que array guardamos el elemento que recibe el boton mediante el idArray que le pasamos
 */
 export const switchFavs = (elem, id) => {
-  console.log("entro switch");
-  console.log(elem, favAgents);
   switch (id) {
     case "agent":
       checkInArray(elem, favAgents);
-      console.log("fav agents switch", favAgents);
       return favAgents;
 
     case "map":
       checkInArray(elem, favMaps);
-      console.log("fav maps switch", favMaps);
       return favMaps;
 
     case "weapon":
       checkInArray(elem, favWeapons);
-      console.log("fav weapons switch", favWeapons);
       return favWeapons;
 
     case "spray":
-      checkInArray(elem,favSprays)
-      console.log("fav sprays switch", favSprays)
+      checkInArray(elem, favSprays);
       return favSprays;
-      
   }
   return favAgents, favMaps, favSprays, favWeapons;
 };

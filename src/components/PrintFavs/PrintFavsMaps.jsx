@@ -4,8 +4,6 @@ import { useNavigate } from 'react-router-dom'
 
 
 const PrintFavsMaps = ({data, array}) => {
-    console.log("data favMaps", data)
-    console.log("array maps", array)
     const allMaps = array.data
     const navigate=useNavigate()
     
