@@ -9,7 +9,7 @@ const Header = () => {
       <div className="logoHome" onClick={()=> navigate("/")}>
       <img 
         src="https://res.cloudinary.com/dy25vd1yu/image/upload/v1691480149/Valorant/logo_valorant_wallpaper_vanhcw.jpg"
-        
+        alt="logo valorant"
       />
       </div>
       <div className="divNavHeader">
@@ -20,6 +20,7 @@ const Header = () => {
       </div>
       <img 
         src="https://res.cloudinary.com/dy25vd1yu/image/upload/v1691485264/star_FILL0_wght400_GRAD0_opsz48_vtyy16.svg" 
+        alt="logo favorites"
         className="logoFavorites"
         onClick={()=> navigate("/favorites")}
       />
