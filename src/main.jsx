@@ -17,6 +17,7 @@ import PrintMaps from './components/PrintMaps.jsx'
 import PrintCardMaps from './components/PrintCardMaps/PrintCardMaps.jsx'
 import { FavContextProvider } from './context/globalContext.jsx'
 import PrintSprays from './components/PrintSprays.jsx'
+import Home from './pages/Home.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -24,7 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <FavContextProvider>
         <Routes>
           <Route path="/" element={<App/>}>
-            <Route index element={<Dashboard/>}/>
+            <Route index element={<Home/>}/>
             <Route path="/agents" element={<Agents/>}>
               <Route index element={<PrintAgents/>}/>
               <Route path="/agents/:name" element={<PrintInfoAgent/>}/>
