@@ -11,7 +11,7 @@ const SectionCustom = styled.section`
     align-items: center;
     padding:15px 0;
     &.animatedSectionOff{
-    opacity: 0;
+    opacity: 0.1;
     transition: all 1s;
 }
 `
