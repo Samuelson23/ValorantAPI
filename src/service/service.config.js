@@ -1,4 +1,3 @@
-import axios from "axios";
 import { axiosUtil } from "../utils/axiosRequest";
 /*
 Creamos una función que nos permite llamar al servicio de la API con diferentes endPoints
