@@ -5,7 +5,9 @@ import Button from '../components/ui/Button.element'
 import Section from '../components/ui/Section.element'
 import DivLayout from '../components/ui/DivLayout.element'
 import { useNavigate} from 'react-router-dom'
-import "./Home.css"
+
+
+
 const Home = () => {
     const navigate = useNavigate()
     const [scr, setScr] = useState(0)
@@ -18,7 +20,7 @@ const Home = () => {
         sections.forEach((elem,index)=>{
             let altura = sections[index].offsetTop
             console.log("altura section",altura)
-            if(altura-550<scrollTop){
+            if(altura-600<scrollTop){
                 sections[index].style.opacity=1
 
             }else{
@@ -83,7 +85,7 @@ const Home = () => {
                 </a>
             </div>
         </Section>
-        <Section className={"animatedSection"}>
+        <Section className={"animatedSectionOff"}>
             <P text={"Descubre toda la información sobre los diferentes agentes del juego"} fontSize={"big"} width={"75%"}></P>
             <H2 text={"AGENTS"}></H2>
             <Button text={"Ver mas"} action={()=> navigate("/agents")}></Button> 
