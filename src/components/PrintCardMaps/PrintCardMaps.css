@@ -109,4 +109,10 @@
     .divNameAndBtn h2{
         width: 100%;
     }
+    .imgFrontMap, .imgBackMap{
+        width: 370px;
+        height: 370px;
+        padding:0 15px;
+
+    }
 }
