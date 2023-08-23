@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route index element={<Home/>}/>
             <Route path="/#/agents" element={<Agents/>}>
               <Route index element={<PrintAgents/>}/>
-              <Route path="/agents/:name" element={<PrintInfoAgent/>}/>
+              <Route path="/#/agents/:name" element={<PrintInfoAgent/>}/>
             </Route>
             <Route path="/maps" element={<Maps/>}>
               <Route index element={<PrintMaps/>}/>
