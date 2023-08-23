@@ -3,22 +3,29 @@
     --whiteColor: #ECE8E1;
     --redColor: #FF4655;
     --blackColor: #0F1923;
-    --greyColor: #292929;
+    --greyColor: #5e5e5e3b;
     --bkColor: #111111;
 
 }
+#root{
+    height: 100vh;
+    width: 100vw;
 
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 main{
+    padding-top: 10vh;
     width: 100vw;
-    min-height: 85vh;
+    min-height: 95vh;
     background-color: var(--blackColor);
     color: var(--whiteColor);
+
 }
 
 a{
