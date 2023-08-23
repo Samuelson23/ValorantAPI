@@ -28,7 +28,11 @@ const PrintCardAgent = ({data}) => {
                         <h2 className="h2NameAgent">{elem.displayName}</h2>
                         <img src={elem.displayIcon} className="imgAgentFull"/>
                         <div className="divButtonCards">
-                            <button className="btnInfoAgent" onClick={()=> navigate(`/agents/${elem.displayName}`)}>More Info</button>
+                            {
+                                elem.displayName!="KAY/O"
+                                ? <button className="btnInfoAgent" onClick={()=> navigate(`/agents/${elem.displayName}`)}>More Info</button>
+                                : <button className="btnInfoAgent" onClick={()=> navigate(`/agents/KAY-O`)}>More Info</button>
+                            }
                             {favAgents.includes(elem.uuid)
                             ?
                             <BtnFav className={"btnInFav"} elem={elem} idArray={"agent"}/>

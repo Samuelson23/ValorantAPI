@@ -11,7 +11,7 @@ del agente que necesitamos pintar en esta pagina
 */
     const {name} = useParams()
     const allAgents = arrayAgents.data
-    const thisAgent = allAgents.filter((agent)=> agent.displayName == name)
+    const thisAgent = allAgents.filter((agent)=> name!="KAY-O" ? agent.displayName == name : agent.displayName == "KAY/O")
 
     console.log(thisAgent)
 
