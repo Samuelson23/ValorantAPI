@@ -1,0 +1,14 @@
+{
+    "routes": [
+      { "src": "/", "dest": "/" },
+      { "src": "/agents", "dest": "/" },
+      { "src": "/maps", "dest": "/" },
+      { "src": "/weapons", "dest": "/" },
+      { "src": "/srpays", "dest": "/" },
+      { "src": "/favorites", "dest": "/" },
+      { "src": "/agents/:name", "dest": "/" },
+      { "src": "/weapon/:name", "dest": "/" },
+      { "src": "/maps/:name", "dest": "/" },
+      { "src": "/[^.]+", "dest": "/", "status": 200 }
+    ]
+  }
