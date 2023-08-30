@@ -17,11 +17,9 @@ This web consists of an API call to get all information about the game and print
 ![VALORANT-3weapons](https://github.com/Samuelson23/ValorantAPI/assets/129754348/2810a3f1-fc97-4346-924a-53c7dd4ab303)
 ![VALORANT-3Skinsweapons](https://github.com/Samuelson23/ValorantAPI/assets/129754348/da9cec12-3809-43b8-81eb-f72134e93842)
 ![VALORANT-4sprays](https://github.com/Samuelson23/ValorantAPI/assets/129754348/756a81cc-67ff-4402-8c9d-cccae50c53a4)
-
-
-Favorites section:
-
-
+</br>
+##Favorites section:
+</br>
 ![VALORANT-5favsAgents](https://github.com/Samuelson23/ValorantAPI/assets/129754348/5875e156-800d-4ee3-80a4-e4c564b3d565)
 ![VALORANT-5favsMaps](https://github.com/Samuelson23/ValorantAPI/assets/129754348/44ec0611-d6f3-4132-a82f-e87ad036c03b)
 ![VALORANT-5favsWeapons](https://github.com/Samuelson23/ValorantAPI/assets/129754348/bf214185-c359-4797-ae96-64a5350339e5)
