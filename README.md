@@ -11,3 +11,12 @@ I've tried to improve my knowledge about React and acquire new ways to develop w
 This web consists of an API call to get all information about the game and print it in different sections. Besides, you can add favorites the elements you like and see all in the favorite section
 
 ![VALORANT-1agents](https://github.com/Samuelson23/ValorantAPI/assets/129754348/b218d8ac-8e98-475a-847e-034bf5af3e69)
+![VALORANT-1-2infoagents](https://github.com/Samuelson23/ValorantAPI/assets/129754348/42460679-a0f8-4cc9-b64c-783a2cd8420e)
+![VALORANT-1-3infoagents](https://github.com/Samuelson23/ValorantAPI/assets/129754348/50b6063d-cfaa-4cfa-bae3-c9b046463c67)
+![VALORANT-2maps](https://github.com/Samuelson23/ValorantAPI/assets/129754348/dd25e8fd-36e0-4c08-8d30-e599523c3137)
+![VALORANT-3weapons](https://github.com/Samuelson23/ValorantAPI/assets/129754348/2810a3f1-fc97-4346-924a-53c7dd4ab303)
+![VALORANT-3Skinsweapons](https://github.com/Samuelson23/ValorantAPI/assets/129754348/da9cec12-3809-43b8-81eb-f72134e93842)
+![VALORANT-4sprays](https://github.com/Samuelson23/ValorantAPI/assets/129754348/756a81cc-67ff-4402-8c9d-cccae50c53a4)
+
+
+
