@@ -70,7 +70,7 @@ const Home = () => {
                     />
                 </a>
                 <P 
-                text={"Web designed by Samuel Martinez. All copyright its from Riot Games API"} 
+                text={"Web designed by Samuel Martinez. All copyright is from Riot Games API"} 
                 fontSize={"small"}
                 bkColor={"var(--whiteColor)"}
                 color={"var(--blackColor)"}
