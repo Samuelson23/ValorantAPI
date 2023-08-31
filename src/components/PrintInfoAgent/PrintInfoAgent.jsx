@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { arrayAgents } from '../../data/dataGlobal'
 import "./PrintInfoAgent.css"
@@ -12,7 +12,14 @@ del agente que necesitamos pintar en esta pagina
     const {name} = useParams()
     const allAgents = arrayAgents.data
     const thisAgent = allAgents.filter((agent)=> name!="KAY-O" ? agent.displayName == name : agent.displayName == "KAY/O")
-
+    useEffect(()=>{
+        window.scroll({
+          top:0,
+          left:0,
+          behavior:"instant",
+        })
+      },[])
+      
   return (
     <>
     <div className="divBackArrow">

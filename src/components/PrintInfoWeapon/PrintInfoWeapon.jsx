@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { arrayWeapons } from '../../data/dataGlobal'
 import "./PrintInfoWeapon.css"
@@ -11,7 +11,14 @@ const PrintInfoWeapon = () => {
   const navigate = useNavigate()
   const weapon = arrayWeapons.data.filter((elem)=>elem.displayName==name)
   const skins = weapon[0].skins
-
+  useEffect(()=>{
+    window.scroll({
+      top:0,
+      left:0,
+      behavior:"instant",
+    })
+  },[])
+  
   return (
     <>
     <div className="divBackArrow">
