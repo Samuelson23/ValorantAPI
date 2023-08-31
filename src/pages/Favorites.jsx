@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { favAgents, favMaps, favSprays, favWeapons } from '../data/dataFavorites'
 import { arrayAgents, arrayMaps, arraySprays, arrayWeapons } from '../data/dataGlobal'
 import PrintFavsAgents from '../components/PrintFavs/PrintFavsAgents'
@@ -11,7 +11,14 @@ import PrintFavsSprays from '../components/PrintFavs/PrintFavsSprays'
 El componente encargado de pintar los favs recibe por props -> data: array de favoritos | array: res de la API con toda la data
 */
 const Favorites = () => {
-
+  useEffect(()=>{
+    window.scroll({
+      top:0,
+      left:0,
+      behavior:"instant",
+    })
+  },[])
+  
   return (
     <>
     <section className="sectionFavs">

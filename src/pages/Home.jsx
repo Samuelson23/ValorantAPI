@@ -29,7 +29,13 @@ const Home = () => {
     }
 
     window.addEventListener("scroll", controlScroll)
-
+    useEffect(()=>{
+        window.scroll({
+          top:0,
+          left:0,
+          behavior:"instant",
+        })
+      },[])
   return (
     <>
     <DivLayout>

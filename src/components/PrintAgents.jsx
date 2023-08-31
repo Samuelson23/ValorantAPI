@@ -4,7 +4,13 @@ import { arrayAgents, arrayMaps, arraySprays, arrayWeapons } from '../data/dataG
 import PrintCardAgent from './PrintCardAgent/PrintCardAgent'
 
 const PrintAgents = () => {
-
+  useEffect(()=>{
+    window.scroll({
+      top:0,
+      left:0,
+      behavior:"instant",
+    })
+  },[])
   return (
     <>
     <PrintCardAgent data={arrayAgents.data}></PrintCardAgent>
