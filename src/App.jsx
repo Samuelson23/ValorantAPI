@@ -4,8 +4,6 @@ import { Outlet } from 'react-router-dom';
 import './App.css'
 
 function App() {
-  const res = new Response()
-  console.log("res",res)
   return (
     <>
       <Header/>
