@@ -3,22 +3,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:20px;
+    gap:50px;
 }
-.divCardsWeapons h3{
-    display:none;
+.divGeneralWeapons{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
 }
-.divCardsWeapons > div{
-    width: 30vw;
+.divGeneralWeapons h2{
+    color:var(--redColor);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70px;
+    width: 300px;
+}
+.divGeneralWeapons > div{
+    
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap:20px;
+    gap:30px;
     border:1px solid var(--redColor);
     padding:10px;
 }
-.divCardsWeapons > div > section{
+.divGeneralWeapons > div > section{
     width: 300px;
     height: 200px;
     display: flex;
@@ -61,26 +74,20 @@ box-shadow: 0px 0px 10px 5px var(--whiteColor);
 
 
 @media screen and (width<850px){
-    .divCardsWeapons h3{
-        font-size: 30px;
-        text-align: center;
-        padding-top:15px;
-        display:block;
-        color: var(--redColor)
-    }
+    
     .divCardsWeapons{
         flex-direction: column;
         width: 100vw;
     }
-    .divCardsWeapons img{
+    .divGeneralWeapons img{
         width: 150px;
     }
-    .divCardsWeapons > div {
+    .divGeneralWeapons > div {
         width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .divCardsWeapons > div > section{
+    .divGeneralWeapons > div > section{
         width: 150px
         
     }
